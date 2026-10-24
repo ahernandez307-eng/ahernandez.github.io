@@ -1,172 +1,72 @@
+/* Reseteo y colores personalizados */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgba(224, 226, 227, 1);
-    color: #242424;
+:root {
+    --dark-slate: darkslategray;
+    --dark-slate-alt: #2f4f4f;
 }
 
-header, .header {
-    text-align: center;
-    padding: 50px 20px;
-    background: linear-gradient(135deg, darkslategray, rgba(224, 226, 227, 1));
-    color: ghostwhite;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+/* Clases utilitarias de color */
+.bg-dark-slate {
+    background-color: var(--dark-slate) !important;
 }
 
-h1 {
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    margin-bottom: 10px;
+.bg-dark-slate-alt {
+    background-color: var(--dark-slate-alt) !important;
 }
 
-.subtitulo {
-    font-size: 18px;
-    opacity: 0.9;
+.text-dark-slate {
+    color: var(--dark-slate) !important;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    padding: 15px;
-    background-color: darkslategray;
-    flex-wrap: wrap;
+/* Header */
+.header-custom {
+    background: linear-gradient(135deg, var(--dark-slate), rgba(224, 226, 227, 1));
 }
 
-nav a {
-    text-decoration: none;
-    color: ghostwhite;
-    font-size: 16px;
-    padding: 8px 16px;
-    border-radius: 6px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-nav a:hover {
-    color: dimgray;
-    background-color: rgba(255, 255, 255, 0.9);
-}
-
-.seccion {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 25px;
-    color: darkslategray;
-}
-
-.sobre-mi-contenido {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.sobre-mi-contenido img {
+/* Fotos de las mascotas */
+.img-pet {
     width: 160px;
     height: 160px;
     object-fit: cover;
-    border-radius: 50%; 
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-.texto {
-    max-width: 100%;
-    text-align: center;
-    font-size: 1.1rem;
-    margin-top: 10px;
+/* Tarjetas de proyectos */
+.custom-card {
+    transition: transform 0.3s ease;
 }
 
-.cards {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-.proyecto-card {
-    background-color: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.proyecto-card:hover {
+.custom-card:hover {
     transform: translateY(-5px);
 }
 
-.habilidades-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 15px;
+/* Habilidades */
+.custom-skill {
+    transition: transform 0.3s ease;
 }
 
-.habilidad {
-    background-color: darkslategray;
-    color: ghostwhite;
-    text-align: center;
-    padding: 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
-    transition: transform 0.3s;
-}
-
-.habilidad:nth-child(even) {
-    background-color: #2f4f4f;
-}
-
-.habilidad:hover {
+.custom-skill:hover {
     transform: translateY(-3px);
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: darkslategray;
+/* Botón personalizado del contador */
+.btn-dark-slate {
+    background-color: var(--dark-slate);
     color: ghostwhite;
-    margin-top: 60px;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-@media (max-width: 600px) {
-    header, .header {
-        padding: 25px 10px;
-    }
+.btn-dark-slate:hover {
+    background-color: var(--dark-slate-alt);
+    color: ghostwhite;
+    transform: translateY(-2px);
+}
 
-    h1 {
-        font-size: 22px;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    nav a {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-
-    .sobre-mi-contenido img {
-        width: 130px;
-        height: 130px;
-    }
-
-    .cards {
-        flex-direction: column;
-    }
+.btn-dark-slate:active {
+    transform: translateY(0);
 }
