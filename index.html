@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera página</title>
     
-    <!-- CDN de Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body class="bg-light text-dark">
 
-    <!-- Header con Bootstrap -->
     <header class="header-custom text-center text-white py-5">
         <div class="container">
             <h1 class="fw-bold">Mi primera página web</h1>
@@ -21,7 +18,6 @@
         </div>
     </header>
 
-    <!-- Navegación con Navbar de Bootstrap -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -30,7 +26,7 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav gap-2 text-center">
                     <li class="nav-item"><a class="nav-link text-white" href="#sobre-mi">Sobre mí</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#proyectos">Mis Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#proyectos">Mis Objetivos</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#habilidades">Habilidades</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="https://www.google.com" target="_blank">Google</a></li>
                 </ul>
@@ -40,7 +36,6 @@
 
     <main class="container my-5">
         
-        <!-- Sección Sobre mí -->
         <section id="sobre-mi" class="mb-5">
             <h2 class="text-center mb-4 text-dark-slate">Sobre mí</h2>
             <div class="row align-items-center justify-content-center text-center g-4">
@@ -51,37 +46,35 @@
                     <img src="./img/grizu.jpeg" alt="Mi perra Grizu" class="rounded-circle shadow img-pet">
                 </div>
                 <div class="col-12 mt-3">
-                    <p class="fs-5 max-w-600 mx-auto">Soy un estudiante de programación web enfocado en aprender desarrollo e implementación de interfaces modernas.</p>
+                    <p class="fs-5 max-w-600 mx-auto">Soy un estudiante de programación enfocado a crecer en el area de pld y padre de dos bendiciones perrunas</p>
                 </div>
             </div>
         </section>
 
-        <!-- Sección Proyectos (Cards de Bootstrap) -->
         <section id="proyectos" class="mb-5">
-            <h2 class="text-center mb-3 text-dark-slate">Proyectos</h2>
-            <p class="text-center text-muted mb-4">Estos son mis proyectos de los últimos 3 años:</p>
+            <h2 class="text-center mb-3 text-dark-slate">Objetivos</h2>
+            <p class="text-center text-muted mb-4">Estos son los proyectos que quisiera hacer en los siguienes 2 años</p>
 
             <div class="row g-4 justify-content-center">
                 <div class="col-md-6 col-lg-5">
                     <div class="card h-100 border-0 shadow-sm custom-card">
                         <div class="card-body text-center p-4">
-                            <h3 class="card-title h4">Proyecto 1</h3>
-                            <p class="card-text text-secondary">Descripción breve de tu primer proyecto o práctica web.</p>
+                            <h3 class="card-title h4">Objetivo 1</h3>
+                            <p class="card-text text-secondary">Completar mi carrera de Programacion y Transformacion Digital en la EBC</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-5">
                     <div class="card h-100 border-0 shadow-sm custom-card">
                         <div class="card-body text-center p-4">
-                            <h3 class="card-title h4">Proyecto 2</h3>
-                            <p class="card-text text-secondary">Descripción breve de tu segundo proyecto o práctica web.</p>
+                            <h3 class="card-title h4">Objetivo 2</h3>
+                            <p class="card-text text-secondary">Poder cerificarme en el CAMS para ser asociado de MLRO</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Sección Habilidades (Grid de Bootstrap) -->
         <section id="habilidades" class="mb-5">
             <h2 class="text-center mb-4 text-dark-slate">Habilidades</h2>
             <div class="row g-3 text-center justify-content-center">
@@ -92,15 +85,14 @@
                     <div class="p-3 bg-dark-slate-alt text-white rounded shadow-sm fw-bold custom-skill">CSS3</div>
                 </div>
                 <div class="col-6 col-sm-3">
-                    <div class="p-3 bg-dark-slate text-white rounded shadow-sm fw-bold custom-skill">Diseño Responsivo</div>
+                    <div class="p-3 bg-dark-slate text-white rounded shadow-sm fw-bold custom-skill">Enhanced due diligence</div>
                 </div>
                 <div class="col-6 col-sm-3">
-                    <div class="p-3 bg-dark-slate-alt text-white rounded shadow-sm fw-bold custom-skill">JavaScript</div>
+                    <div class="p-3 bg-dark-slate-alt text-white rounded shadow-sm fw-bold custom-skill">AML investigation</div>
                 </div>
             </div>
         </section>
 
-        <!-- Sección Contador -->
         <section class="text-center py-4 my-4 bg-white rounded shadow-sm">
             <h2 id="contador" class="display-3 fw-bold text-dark-slate">0</h2>
             <button id="btn-clic" class="btn btn-dark-slate btn-lg px-4 shadow-sm">Hacer clic</button>
@@ -108,12 +100,10 @@
 
     </main>
 
-    <!-- Footer -->
     <footer class="bg-dark-slate text-white text-center py-4 mt-auto">
         <p class="mb-0">Mi página web &copy; 2026</p>
     </footer>
 
-    <!-- JS de Bootstrap + tu Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
